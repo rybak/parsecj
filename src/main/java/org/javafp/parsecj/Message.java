@@ -68,7 +68,7 @@ public interface Message<I> {
             new MessageImpl<I>(
                 this.position(),
                 this.symbol(),
-                this.expected().add(rhs.expected())
+                this.expected().addAll(rhs.expected())
             )
         );
     }
