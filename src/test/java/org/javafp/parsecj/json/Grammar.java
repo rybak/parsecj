@@ -85,7 +85,7 @@ public class Grammar {
                 tok(chr(','))
             )
         ).bind(l ->
-            retn(Node.array(IList.toList(l)))
+            retn(Node.array(l.toList()))
         ).label("array");
 
     private static LinkedHashMap<String, Node> toMap(IList<Map.Entry<String, Node>> fields) {
